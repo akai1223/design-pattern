@@ -9,6 +9,10 @@ public class SimpleFactoryTest {
             fruit.grow();
             fruit.plant();
             fruit.harvest();
+            fruit = FruitGardener.fruitFactory("Grape");
+            fruit.grow();
+            fruit.plant();
+            fruit.harvest();
         } catch (BadFruitException e) {
             e.printStackTrace();
         }

@@ -1,9 +1,10 @@
 package com.zek.pattern.factory.factorymethod;
 
 /**
- * 抽象产品角色
+ * 抽象工厂角色
  * @author zhangkai
  */
-public interface Product {
+public interface Creator {
 
+    Product factory();
 }

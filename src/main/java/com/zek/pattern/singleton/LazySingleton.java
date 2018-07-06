@@ -19,7 +19,7 @@ public class LazySingleton {
         return instance;
     }
 
-    public static synchronized LazySingleton getInstance2() {
+    public static LazySingleton getInstance2() {
 
         synchronized (LazySingleton.class) {
             if (instance == null) {

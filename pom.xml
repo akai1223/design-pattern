@@ -24,6 +24,7 @@
     </build>
     <modules>
         <module>rmi</module>
+        <module>serial</module>
     </modules>
 
 </project>

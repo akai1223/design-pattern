@@ -1,4 +1,4 @@
-package pattern.prototype.simple;
+package com.zek.pattern.prototype.simple;
 
 public class CloneTest {
     public static void main(String[] args) {

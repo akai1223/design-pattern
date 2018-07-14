@@ -1,4 +1,4 @@
-package pattern.strategy.payport;
+package com.zek.pattern.strategy.payport;
 
 import pattern.strategy.PayState;
 

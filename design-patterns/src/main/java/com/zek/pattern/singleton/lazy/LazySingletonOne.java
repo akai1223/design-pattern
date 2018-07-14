@@ -1,4 +1,4 @@
-package pattern.singleton.lazy;
+package com.zek.pattern.singleton.lazy;
 
 /**
  * 懒汉式单例模式

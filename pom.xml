@@ -27,6 +27,7 @@
         <module>rmi</module>
         <module>serial</module>
         <module>design-patterns</module>
+        <module>dubbo-exercise</module>
     </modules>
 
 </project>

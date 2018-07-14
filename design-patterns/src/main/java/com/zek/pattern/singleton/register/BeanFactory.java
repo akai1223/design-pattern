@@ -1,4 +1,4 @@
-package pattern.singleton.register;
+package com.zek.pattern.singleton.register;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

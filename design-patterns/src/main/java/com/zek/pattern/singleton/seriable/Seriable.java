@@ -1,4 +1,4 @@
-package pattern.singleton.seriable;
+package com.zek.pattern.singleton.seriable;
 
 import java.io.Serializable;
 

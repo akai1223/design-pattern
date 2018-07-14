@@ -1,4 +1,4 @@
-package pattern.prototype.deep;
+package com.zek.pattern.prototype.deep;
 
 import java.io.*;
 import java.util.Date;

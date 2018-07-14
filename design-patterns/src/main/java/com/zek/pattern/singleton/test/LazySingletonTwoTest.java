@@ -1,4 +1,4 @@
-package pattern.singleton.test;
+package com.zek.pattern.singleton.test;
 
 import pattern.singleton.lazy.LazySingletonTwo;
 

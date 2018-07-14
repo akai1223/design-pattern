@@ -1,5 +1,6 @@
-package pattern.strategy;
+package com.zek.pattern.strategy;
 
+import com.zek.pattern.strategy.payport.PayType;
 import pattern.strategy.payport.PayType;
 
 public class PayStrategyTest {

@@ -1,4 +1,4 @@
-package pattern.prototype.simple;
+package com.zek.pattern.prototype.simple;
 
 public class CloneTarget extends Prototype {
     @Override

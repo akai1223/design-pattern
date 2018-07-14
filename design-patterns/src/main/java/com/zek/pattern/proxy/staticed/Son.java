@@ -1,4 +1,4 @@
-package pattern.proxy.staticed;
+package com.zek.pattern.proxy.staticed;
 
 public class Son implements Person {
     @Override

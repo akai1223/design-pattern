@@ -1,4 +1,4 @@
-package pattern.strategy.payport;
+package com.zek.pattern.strategy.payport;
 
 public enum PayType {
     ALI_PAY(new AliPay()),

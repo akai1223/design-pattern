@@ -1,4 +1,4 @@
-package pattern.prototype.deep;
+package com.zek.pattern.prototype.deep;
 
 public class Test {
     public static void main(String[] args) {

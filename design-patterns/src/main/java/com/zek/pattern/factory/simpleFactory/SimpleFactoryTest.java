@@ -1,4 +1,4 @@
-package pattern.factory.simpleFactory;
+package com.zek.pattern.factory.simpleFactory;
 
 public class SimpleFactoryTest {
 

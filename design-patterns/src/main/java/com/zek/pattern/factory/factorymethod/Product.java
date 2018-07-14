@@ -1,4 +1,4 @@
-package pattern.factory.factorymethod;
+package com.zek.pattern.factory.factorymethod;
 
 /**
  * 抽象产品角色

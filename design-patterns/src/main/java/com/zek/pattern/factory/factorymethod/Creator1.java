@@ -1,4 +1,4 @@
-package pattern.factory.factorymethod;
+package com.zek.pattern.factory.factorymethod;
 
 /**
  * 具体工厂角色1

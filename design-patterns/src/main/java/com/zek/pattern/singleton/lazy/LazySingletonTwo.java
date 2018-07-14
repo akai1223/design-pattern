@@ -1,4 +1,4 @@
-package pattern.singleton.lazy;
+package com.zek.pattern.singleton.lazy;
 
 /**
  * 内部类实现的懒汉式单例

@@ -1,4 +1,4 @@
-package pattern.factory.abstractfactory;
+package com.zek.pattern.factory.abstractfactory;
 
 public class ConcreteProductB1 implements ProductB {
     public ConcreteProductB1() {

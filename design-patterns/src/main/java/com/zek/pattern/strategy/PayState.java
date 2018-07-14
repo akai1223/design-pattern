@@ -1,4 +1,4 @@
-package pattern.strategy;
+package com.zek.pattern.strategy;
 
 public class PayState {
     private int code;

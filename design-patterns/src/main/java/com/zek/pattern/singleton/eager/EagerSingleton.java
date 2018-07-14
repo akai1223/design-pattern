@@ -1,4 +1,4 @@
-package pattern.singleton.eager;
+package com.zek.pattern.singleton.eager;
 
 /**
  * 饿汉式单例模式

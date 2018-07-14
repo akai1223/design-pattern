@@ -1,4 +1,4 @@
-package pattern.factory.abstractfactory;
+package com.zek.pattern.factory.abstractfactory;
 
 /**
  * 抽象工厂

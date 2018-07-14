@@ -1,4 +1,4 @@
-package pattern.proxy.staticed;
+package com.zek.pattern.proxy.staticed;
 
 public interface Person {
     public void findLove();

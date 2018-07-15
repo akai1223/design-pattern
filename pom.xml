@@ -29,6 +29,7 @@
         <module>design-patterns</module>
         <module>dubbo-exercise</module>
         <module>activemq</module>
+        <module>zookeeper-exercise</module>
     </modules>
 
 </project>

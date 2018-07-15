@@ -30,6 +30,7 @@
         <module>dubbo-exercise</module>
         <module>activemq</module>
         <module>zookeeper-exercise</module>
+        <module>kafka-exercise</module>
     </modules>
 
 </project>

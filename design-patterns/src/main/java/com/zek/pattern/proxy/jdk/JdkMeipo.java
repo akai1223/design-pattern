@@ -1,7 +1,6 @@
 package com.zek.pattern.proxy.jdk;
 
 import com.zek.pattern.proxy.staticed.Person;
-import pattern.proxy.staticed.Person;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

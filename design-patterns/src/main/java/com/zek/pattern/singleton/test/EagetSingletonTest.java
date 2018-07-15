@@ -1,6 +1,6 @@
 package com.zek.pattern.singleton.test;
 
-import pattern.singleton.lazy.LazySingletonOne;
+import com.zek.pattern.singleton.lazy.LazySingletonOne;
 
 import java.util.concurrent.CountDownLatch;
 

@@ -1,7 +1,6 @@
 package com.zek.pattern.strategy;
 
 import com.zek.pattern.strategy.payport.PayType;
-import pattern.strategy.payport.PayType;
 
 public class PayStrategyTest {
     public static void main(String[] args) {

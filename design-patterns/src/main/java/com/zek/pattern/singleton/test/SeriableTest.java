@@ -1,7 +1,6 @@
 package com.zek.pattern.singleton.test;
 
 import com.zek.pattern.singleton.seriable.Seriable;
-import pattern.singleton.seriable.Seriable;
 
 import java.io.*;
 

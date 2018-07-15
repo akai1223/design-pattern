@@ -1,6 +1,7 @@
 package com.zek.pattern.singleton.test;
 
-import pattern.singleton.lazy.LazySingletonTwo;
+
+import com.zek.pattern.singleton.lazy.LazySingletonTwo;
 
 import java.lang.reflect.Constructor;
 

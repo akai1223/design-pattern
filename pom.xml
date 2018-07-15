@@ -28,6 +28,7 @@
         <module>serial</module>
         <module>design-patterns</module>
         <module>dubbo-exercise</module>
+        <module>activemq</module>
     </modules>
 
 </project>

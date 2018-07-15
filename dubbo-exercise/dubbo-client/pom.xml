@@ -3,15 +3,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>com.zek</groupId>
         <artifactId>dubbo-exercise</artifactId>
+        <groupId>com.zek</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>dubbo-server</artifactId>
+    <artifactId>dubbo-client</artifactId>
 
-    <name>dubbo-server</name>
+    <name>dubbo-client</name>
+    <description>A simple dubbo-client.</description>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
 
@@ -25,8 +26,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
+            <version>3.8.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -95,4 +95,6 @@
             </plugins>
         </pluginManagement>
     </build>
+
+
 </project>

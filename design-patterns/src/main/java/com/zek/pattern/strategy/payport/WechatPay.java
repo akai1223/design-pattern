@@ -1,6 +1,7 @@
 package com.zek.pattern.strategy.payport;
 
-import pattern.strategy.PayState;
+
+import com.zek.pattern.strategy.PayState;
 
 public class WechatPay implements Payment {
     @Override

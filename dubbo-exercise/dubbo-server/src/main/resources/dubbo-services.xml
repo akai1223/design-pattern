@@ -13,7 +13,10 @@
 
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <dubbo:service interface="com.zek.dubbo.api.IHelloDubbo" ref="iHelloDubboImpl" />
+    <dubbo:service interface="com.zek.dubbo.api.IHelloDubbo" ref="iHelloDubboImpl" version="1.0.1"/>
+
+    <dubbo:service interface="com.zek.dubbo.api.IHelloDubbo" ref="iHelloDubboImpl2" version="1.0.2"/>
 
     <bean id="iHelloDubboImpl" class="com.zek.dubbo.server.IHelloDubboImpl"/>
+    <bean id="iHelloDubboImpl2" class="com.zek.dubbo.server.IHelloDubboImpl2"/>
 </beans>

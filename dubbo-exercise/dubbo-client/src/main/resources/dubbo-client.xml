@@ -13,6 +13,7 @@
 
     <dubbo:protocol name="dubbo" port="20880"/>
 
-    <dubbo:reference id="iHelloDubbo" interface="com.zek.dubbo.api.IHelloDubbo"/>
+    <dubbo:reference id="iHelloDubbo" interface="com.zek.dubbo.api.IHelloDubbo" version="1.0.1" cluster="broadcast" timeout="1"
+    mock="com.zek.dubbo.client.TestMock"/>
 
 </beans>

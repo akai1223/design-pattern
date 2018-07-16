@@ -1,7 +1,6 @@
 package com.zek.activemq;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.w3c.dom.Text;
 
 import javax.jms.*;
 

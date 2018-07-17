@@ -64,8 +64,9 @@ ls /dubbo/com.zek.dubbo.api.IHelloDubbo/providers
      
  ## 6 DUBBO SPI 扩展
  * JAVA SPI
- 1. META-INF/services/接口全路径
+ 1. META-INF/services/接口全路径文件
     > 里面写实现类全类名
     
  * dubbo的SPI规范
-    * 1. META-INF/dubbo/; META-INF/intel
+     1. META-INF/dubbo/; META-INF/intelnal; META-INF/services
+     2. 文件（接口全路径），key value

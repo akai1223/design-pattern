@@ -58,7 +58,7 @@
    > `producer.setDeliveryMode(DeliveryMode.PERSISTENT);`
  
  ### 消息同步发送、异步发送
- >同步发送、异步发送都是针对broker
+ >同步发送、异步发送都是针对broker.<br>
  >消息生产者使用持久（persistent）传递模式发送消息的时候，Producer.send() 方法会被阻塞，
  直到 broker 发送一个确认消息给生产者(ProducerAck)，
  这个确认消息暗示broker已经成功接收到消息并把消息保存到二级存储中。这个过程通常称为同步发送。
@@ -70,17 +70,31 @@
  commit 方法成功返回意味着所有的持久消息都以被写到二级存储中。
  
 ```
- if (onComplete==null 
-  && sendTimeout <= 0 
-  && !msg.isResponseRequired()
-  && !connection.isAlwaysSyncSend() 
-  && (!msg.isPersistent() || connection.isUseAsyncSend() || txid != null))
+ if (onComplete != null 
+     || sendTimeout > 0 
+     || msg.isResponseRequired() 
+     || this.connection.isAlwaysSyncSend() 
+     || msg.isPersistent() 
+     && !this.connection.isUseAsyncSend() && txid == null) {
+     // 同步发送
+     if (sendTimeout > 0 && onComplete == null) {
+         this.connection.syncSendPacket(msg, sendTimeout);
+     } else {
+         this.connection.syncSendPacket(msg, onComplete);
+     }
+ } else {
+     // 异步发送
+     this.connection.asyncSendPacket(msg);
+     if (producerWindow != null) {
+         int size = msg.getSize();
+         producerWindow.increaseUsage((long)size);
+     }
+ }
 ```
  
  > 想要使用异步，在brokerURL中增加 `jms.alwaysSyncSend=false&jms.useAsyncSend=true`
- 如果设置了`alwaysSyncSend=true`系统将会忽略`useAsyncSend`设置的值都采用同步
  > * **默认：`(alwaysSyncSend=false,useAsyncSend=false)`**
-   >> 1. 默认情况，非持久化、事务内的消息均采用异步发送，持久化消息，同步发送，开启事务，都是异步发送
+   >> 1. 默认情况，持久化、非事务内的消息均采用同步发送，开启事务，都是异步发送
    >> 2. `alwaysSyncSend=false`，如果指定了`useAsyncSend=true`，异步发送
  
  

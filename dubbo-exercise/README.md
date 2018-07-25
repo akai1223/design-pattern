@@ -70,3 +70,5 @@ ls /dubbo/com.zek.dubbo.api.IHelloDubbo/providers
  * dubbo的SPI规范
      1. META-INF/dubbo/; META-INF/intelnal; META-INF/services
      2. 文件（接口全路径），key value
+     
+     6253.67

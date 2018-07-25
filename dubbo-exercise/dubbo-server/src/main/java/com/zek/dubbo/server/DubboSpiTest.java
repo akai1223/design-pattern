@@ -12,5 +12,12 @@ public class DubboSpiTest {
         Protocol protocol = ExtensionLoader.getExtensionLoader(Protocol.class)
                         .getExtension("myProtocol");
         System.out.println(protocol.getDefaultPort());
+
+        /**
+         * 获取dubbo默认的port 通过 @SPI("dubbo")
+         */
+        protocol = ExtensionLoader.getExtensionLoader(Protocol.class).getDefaultExtension();
+        System.out.println(protocol.getDefaultPort());
+
     }
 }

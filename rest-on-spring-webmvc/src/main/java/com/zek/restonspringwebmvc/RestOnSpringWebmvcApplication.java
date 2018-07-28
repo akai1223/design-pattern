@@ -10,3 +10,4 @@ public class RestOnSpringWebmvcApplication {
         SpringApplication.run(RestOnSpringWebmvcApplication.class, args);
     }
 }
+

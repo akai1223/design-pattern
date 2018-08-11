@@ -1,2 +1,11 @@
-# pattern
-designpattern
+### content
+1. designpattern
+2. rmi
+3. serial
+4. zookeeper
+5. activemq
+6. kafka
+7. dubbo
+8. redis
+9. springboot
+10. springcloud

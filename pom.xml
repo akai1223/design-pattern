@@ -31,6 +31,8 @@
         <module>zookeeper-exercise</module>
         <module>kafka-exercise</module>
         <module>redis-cache</module>
+        <module>nginx</module>
+        <module>NIO</module>
     </modules>
 
 </project>

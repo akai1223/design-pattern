@@ -1,6 +1,8 @@
 # kafka
 
+### kafka架构
 
+    
 
 ### 副本放置策略　　
 > * Kafka分配Replica的算法如下(注意!!! 下面的broker、partition副本数这些编号都是从0开始编号的)：

@@ -5,7 +5,7 @@ import com.zek.user.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
@@ -22,9 +22,7 @@ public class UserServiceProviderRestController {
     private UserService userService;
 
     @PostMapping("/user/save")
-    public User saveUser(@RequestParam String name) {
-        User user = new User();
-        user.setName(name);
+    public User saveUser(@RequestBody User user) {
         if (userService.save(user)) {
             return user;
         } else {

@@ -3,6 +3,7 @@ package com.zek.spring.cloud.feign.client.web;
 import com.zek.spring.cloud.feign.api.domain.Person;
 import com.zek.spring.cloud.feign.api.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Collection;
@@ -23,7 +24,7 @@ public class PersonClientController implements PersonService{
     }
 
     @Override
-    public boolean save(Person person) {
+    public boolean save(@RequestBody Person person) {
         return personService.save(person);
     }
 

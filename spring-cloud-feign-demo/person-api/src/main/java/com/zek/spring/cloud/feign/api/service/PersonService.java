@@ -5,6 +5,7 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Collection;
 
@@ -13,7 +14,8 @@ import java.util.Collection;
  * @Auther zhangkai
  * @DateTime 2018/9/24 下午7:25
  */
-@FeignClient(value = "person-service")
+@FeignClient("person-service")
+@RequestMapping("/provider")
 public interface PersonService {
 
     @PostMapping(value = "/person/save")

@@ -33,6 +33,7 @@
         <module>redis-cache</module>
         <module>nginx</module>
         <module>NIO</module>
+        <module>customer-enable-autoconfig</module>
     </modules>
 
 </project>

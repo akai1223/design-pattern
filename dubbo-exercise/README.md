@@ -17,9 +17,33 @@
 * zookeeper上的注册的发布服务信息
 ```
 ls /dubbo/com.zek.dubbo.api.IHelloDubbo/providers
+
 [
- dubbo%3A%2F%2F192.168.43.1%3A20880%2Fcom.zek.dubbo.api.IHelloDubbo2%3Fanyhost%3Dtrue%26application%3Ddubbo-server%26dubbo%3D2.6.2%26generic%3Dfalse%26interface%3Dcom.zek.dubbo.api.IHelloDubbo%26methods%3DsayHello%26owner%3Dzek%26pid%3D5700%26revision%3D1.0.2%26side%3Dprovider%26timestamp%3D1531747867474%26version%3D1.0.2,
- dubbo%3A%2F%2F192.168.43.1%3A20880%2Fcom.zek.dubbo.api.IHelloDubbo%3Fanyhost%3Dtrue%26application%3Ddubbo-server%26dubbo%3D2.6.2%26generic%3Dfalse%26interface%3Dcom.zek.dubbo.api.IHelloDubbo%26methods%3DsayHello%26owner%3Dzek%26pid%3D5700%26revision%3D1.0.1%26side%3Dprovider%26timestamp%3D1531747866442%26version%3D1.0.1
+ dubbo//192.168.43.1:20880/com.zek.dubbo.api.IHelloDubbo2?anyhost=true
+ &application=dubbo-server
+ &dubbo=2.6.2
+ &generic=false
+ &interface=com.zek.dubbo.api.IHelloDubbo
+ &methods=sayHello
+ &owner=zek
+ &pid=5700
+ &revision=1.0.2
+ &side=provider
+ &timestamp=1531747867474
+ &version=1.0.2,
+ 
+ dubbo//192.168.43.1:20880/com.zek.dubbo.api.IHelloDubbo?anyhost=true
+ &application=dubbo-server
+ &dubbo=2.6.2
+ &generic=false
+ &interface=com.zek.dubbo.api.IHelloDubbo
+ &methods=sayHello
+ &owner=zek
+ &pid=5700
+ &revision=1.0.1
+ &side=provider
+ &timestamp=1531747866442
+ &version=1.0.1
 ]
 ```
 

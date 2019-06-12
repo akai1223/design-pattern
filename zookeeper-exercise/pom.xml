@@ -10,6 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>zookeeper-exercise</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>zookeeper-demo</module>
+    </modules>
 
 
 </project>

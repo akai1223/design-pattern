@@ -1,6 +1,6 @@
 #### 断路器
 
-@EnableHystrix 激活
+`@EnableHystrix`激活
 
 ```java
 package com.zek.hystrix.controller;

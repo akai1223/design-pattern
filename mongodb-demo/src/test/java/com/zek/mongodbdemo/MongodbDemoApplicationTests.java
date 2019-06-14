@@ -2,6 +2,7 @@ package com.zek.mongodbdemo;
 
 import com.alibaba.fastjson.JSON;
 import com.zek.mongodbdemo.service.MongoDbServiceDemo;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,9 +16,15 @@ public class MongodbDemoApplicationTests {
 	@Autowired
 	private MongoDbServiceDemo mongoDbServiceDemo;
 
-	@Test
+	@Before
 	public void contextLoads() {
 
+		System.out.println("before contextLoads ------------");
+
+	}
+
+	@Test
+	public void test1() {
 		System.out.println(JSON.toJSONString(mongoDbServiceDemo.findAll()));
 	}
 

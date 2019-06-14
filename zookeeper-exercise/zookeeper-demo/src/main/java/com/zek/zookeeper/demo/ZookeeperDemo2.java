@@ -30,6 +30,15 @@ public class ZookeeperDemo2 implements Watcher {
 
     }
 
+
+    /**
+     * 功能描述:
+     *
+     * @author zhangkai
+     * @date 2019-06-13
+     * @param watchedEvent
+     * @return void
+     */
     @Override
     public void process(WatchedEvent watchedEvent) {
         System.out.println("Receive watched event: " + watchedEvent);

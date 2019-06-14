@@ -13,4 +13,3 @@
 > * 假设集群一共有4个brokers，一个topic有4个partition，每个Partition有3个副本。
   下图是每个Broker上的副本分配情况 ![副本放置策略.png](副本放置策略.png)
   
-  

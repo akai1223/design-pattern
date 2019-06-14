@@ -1,7 +1,7 @@
 #### nginx
 
 * 负载均衡服务器
-> lvs/apache/nginx/HAproxy
+> lvs apache nginx HAproxy
 
 * 热备
 > 2台nginx服务器，使用一台，挂掉，切换到另外一台

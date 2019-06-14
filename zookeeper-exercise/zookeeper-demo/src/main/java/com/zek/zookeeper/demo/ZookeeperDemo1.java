@@ -23,10 +23,10 @@ public class ZookeeperDemo1 implements Watcher {
         long sessionId = zooKeeper.getSessionId();
         byte[] sessionPasswd = zooKeeper.getSessionPasswd();
 
-        ZooKeeper zooKeeper1 = new ZooKeeper(connectString, 5000, new ZookeeperDemo1(),
+        zooKeeper = new ZooKeeper(connectString, 5000, new ZookeeperDemo1(),
                 1L, "test".getBytes());
 
-        ZooKeeper zooKeeper2 = new ZooKeeper(connectString, 5000, new ZookeeperDemo1(),
+        zooKeeper = new ZooKeeper(connectString, 5000, new ZookeeperDemo1(),
                 sessionId, sessionPasswd);
 
         Thread.sleep(Integer.MAX_VALUE);
